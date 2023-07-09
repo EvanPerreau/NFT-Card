@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #0d1a2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 350px;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: #15273f;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Outfit', sans-serif;
+    box-shadow: 0 0 30px #000;
+}
+
+.card-img {
+    border-radius: 10px;
+    height: 350px;
+    position: relative;
+}
+
+.hover-card-img {
+    opacity: 0;
+    border-radius: 10px;
+    padding: 150px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    background-color: #09f6f588;
+    transition: 0.2s;
+}
+
+.hover-card-img:hover {
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.card-title {
+    margin-top: 24px;
+    font-weight: 600;
+    color : #fff;
+    transition: 0.2s;
+}
+
+.card-title:hover {
+    color: #09f6f5;
+    transition: 0.3s;
+}
+
+.card-desc {
+    margin-top: 24px;
+    font-weight: 300;
+    color: #7b91af;
+    font-size: 18px;
+}
+
+.card-price-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.card-price-img {
+    height: 30px;
+    margin-right: 8px;
+}
+
+.card-price {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: #09f6f5;
+}
+
+.card-price-time {
+    display: flex;
+    align-items: center;
+    float: right;
+    font-weight: 400;
+    color: #7b91af;
+}
+
+.card-footer-container {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #7b91af;
+    padding-top: 24px;
+}
+
+.card-footer-img {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+
+.card-footer {
+    font-weight: 400;
+    margin-left: 20px;
+    position: relative;
+    color: #7b91af;
+}
+
+.card-footer-name {
+    color : #fff;
+    transition: 0.2s;
+}
+
+.card-footer-name:hover {
+    color: #09f6f5;
+    transition: 0.3s;
+}
